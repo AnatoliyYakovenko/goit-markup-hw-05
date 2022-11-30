@@ -57,7 +57,7 @@
         Ефективні рішення для<br />
         вашого бізнесу
       </h1>
-      <button type="button" class="button primary order-button">
+      <button type="button" data-modal-open class="button primary order-button">
         Замовити послугу
       </button>
     </section>
@@ -119,14 +119,25 @@
         <h2 class="center-title">Чим ми займаємося</h2>
         <ul class="work-list">
           <li class="work-list_item">
-            <img src="./images/typing.jpg" width="370" alt="man is coding and looking at block diagram" />
+            <div class="work-name_thumb">
+              <img class="work-img" src="./images/typing.jpg" width="370"
+                alt="man is coding and looking at block diagram" />
+              <h3 class="work-title features-title">Десктопні додатки</h3>
+            </div>
           </li>
           <li class="work-list_item">
-            <img src="./images/phone.jpg" width="370"
-              alt="phone in hand and laptop with phone's design on it's screen" />
+            <div class="work-name_thumb">
+              <img class="work-img" src="./images/phone.jpg" width="370"
+                alt="phone in hand and laptop with phone's design on it's screen" />
+              <h3 class="work-title features-title">Мобільні додатки</h3>
+            </div>
           </li>
           <li class="work-list_item">
-            <img src="./images/tablet.jpg" width="370" alt="someone is choosing color on the tablet" />
+            <div class="work-name_thumb">
+              <img class="work-img" src="./images/tablet.jpg" width="370"
+                alt="someone is choosing color on the tablet" />
+              <h3 class="work-title features-title">Дизайнерські рішення</h3>
+            </div>
           </li>
         </ul>
       </div>
@@ -328,6 +339,16 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-close" data-modal-close>
+        <svg svg class="modal-icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-closeblack"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
