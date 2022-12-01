@@ -97,6 +97,7 @@ button {
   padding-bottom: 32px;
   color: var(--primary-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav_link.current {
   color: var(--blue-elements);
@@ -116,13 +117,14 @@ button {
 .site-nav_link:hover,
 .site-nav_link:focus {
   color: var(--blue-elements);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 /* Contacts */
 .contact {
   display: flex;
   align-items: center;
   color: var(--secondary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-nav {
   display: flex;
@@ -134,7 +136,7 @@ button {
 .contacts-nav .contact:hover,
 .contacts-nav .contact:focus {
   color: var(--blue-elements);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .contacts-icon {
   margin-right: 10px;
@@ -312,6 +314,7 @@ button {
   border-radius: 50%;
   color: #afb1b8;
   background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -319,7 +322,7 @@ button {
   background-color: var(--blue-elements);
   color: var(--white-elements);
   outline: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .clients-list {
   display: flex;
@@ -330,6 +333,7 @@ button {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
   border: 1px solid #afb1b8;
@@ -341,7 +345,7 @@ button {
 .clients-link:focus .clients-icon {
   color: var(--blue-elements);
   border: 1px solid var(--blue-elements);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .footer {
   margin-right: auto;
@@ -368,6 +372,7 @@ button {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  
 }
 .contact-footer {
   margin-top: 9px;
@@ -376,11 +381,13 @@ button {
 .address .contact-footer {
   color: var(--address-links-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .address .contact-footer:hover,
 .address .contact-footer:focus {
   color: var(--blue-elements);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .join {
   margin-left: 70px;
@@ -408,12 +415,13 @@ button {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-link:hover,
 .join-link:focus {
   background-color: var(--blue-elements);
   outline: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 /* Buttons */
 .button {
@@ -429,6 +437,7 @@ button {
   line-height: 1.44;
 
   background-color: var(--team-background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
@@ -453,6 +462,7 @@ button {
   padding-bottom: 50px;
   list-style: none;
   gap: 8px;
+  
 }
 .portfolio_btn {
   display: flex;
@@ -468,7 +478,7 @@ button {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--blue-elements);
   outline: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* PORTFOLIO */
@@ -484,15 +494,15 @@ button {
   display: block;
   width: 370px;
 }
-.projects-link:hover,
-.projects-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .projects-link {
   display: block;
   text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);  
 }
 .projects-link:hover .projects-overflow,
 .projects-link:focus .projects-overflow {
@@ -573,8 +583,6 @@ button {
 }
 .is-hidden.backdrop .modal{
   transform: translate(-50%, -50%) scale(1.5); 
-
- 
 }
 .modal-close {
   position: absolute;
