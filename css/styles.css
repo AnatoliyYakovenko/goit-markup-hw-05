@@ -116,7 +116,7 @@ button {
 .site-nav_link:hover,
 .site-nav_link:focus {
   color: var(--blue-elements);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Contacts */
 .contact {
@@ -134,7 +134,7 @@ button {
 .contacts-nav .contact:hover,
 .contacts-nav .contact:focus {
   color: var(--blue-elements);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-icon {
   margin-right: 10px;
@@ -319,7 +319,7 @@ button {
   background-color: var(--blue-elements);
   color: var(--white-elements);
   outline: transparent;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list {
   display: flex;
@@ -341,10 +341,9 @@ button {
 .clients-link:focus .clients-icon {
   color: var(--blue-elements);
   border: 1px solid var(--blue-elements);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   padding: 60px 0;
@@ -381,7 +380,7 @@ button {
 .address .contact-footer:hover,
 .address .contact-footer:focus {
   color: var(--blue-elements);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join {
   margin-left: 70px;
@@ -414,7 +413,7 @@ button {
 .join-link:focus {
   background-color: var(--blue-elements);
   outline: transparent;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Buttons */
 .button {
@@ -469,7 +468,7 @@ button {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--blue-elements);
   outline: transparent;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* PORTFOLIO */
@@ -489,7 +488,7 @@ button {
 .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-link {
   display: block;
